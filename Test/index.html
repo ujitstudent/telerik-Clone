@@ -1,42 +1,117 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Bootstrap Page Layout - Sample Demo</title>
+  <link rel="shortcut icon" href="http://teamtreehouse.com/assets/favicon.ico">
+  <link rel="icon" href="http://teamtreehouse.com/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/global.css">
+  <link href="css/kendo.mobile.all.min.css" rel="stylesheet" >
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/kendo.all.min.js"></script>
+</head>
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+<body>
+    <nav id="navigation">
+      <div class="container">
+        <ul class="navlinks">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="index.html">The Team</a></li>
+          <li><a href="index.html">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <header id="heading">
+      <div class="container text-center">
+        <h1>Super Nintendo Rocks</h1>
+        <h4>But this is just a sample demo layout, don't get too excited!</h4>
+        
+        <p><a href="index.html" class="btn btn-large btn-inverse">Check out our features</a></p>
+      </div>
+    </header>
+    
+    <div id="main-content">
+      <div class="container">
+         <div class="row">
+           <div class="span4">
+             <h2>Our Products</h2>
+             <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
+             <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+           </div>
+   
+           <div class="span4">
+             <h2>We Love You! <small>so much</small></h2>
+             <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
+             <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
+           </div>
+   
+           <div class="span4">
+             <h2>Headline Here</h2>
+             <p>Obviously this blue part here is the land. Let the great experiment begin! But I'm the oldest. The matriarch if you will. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. Maybe we should call her?</p>
+             <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+           </div>
+        </div><!-- @end .row -->
+        
+        <hr>
+        
+        <h2>SNES in Dribbble Shots</h2>
+        <div class="alert alert-info">
+          <strong>Note:</strong> Each shot is linked to the original source.
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+        
+        <div class="row-fluid">
+          <ul class="thumbnails">
+            <li class="span4">
+              <a href="http://dribbble.com/shots/39065-snes-controller" class="thumbnail" target="_blank">
+              <img src="images/dribbble/01-snes-controller.png" alt="snes controller dribbble shot">
+              </a>
+            </li>
+            <li class="span4">
+              <a href="http://dribbble.com/shots/525128-Micons-Series-2-SNES" class="thumbnail" target="_blank">
+              <img src="images/dribbble/02-snes-console-mini-icons.png" alt="minicon series2 snes console">
+              </a>
+            </li>
+            <li class="span4">
+              <a href="http://dribbble.com/shots/633186-The-Game" class="thumbnail" target="_blank">
+              <img src="images/dribbble/03-snes-video-game-dribbble.png" alt="snes video game cartridge shot">
+              </a>
+            </li>
+          </ul>
+        </div><!-- @end .row-fluid -->
+        
+        <div class="row-fluid">
+          <ul class="thumbnails">
+            <li class="span6">
+              <a href="http://dribbble.com/shots/758735-Oh-Oh-Please-Amaze-Me-Detail-IV" class="thumbnail" target="_blank">
+              <img src="images/dribbble/04-superpad-dark-illustration.png" alt="dribbble shots super nintendo">
+              </a>
+            </li>
+            <li class="span6">
+              <a href="http://dribbble.com/shots/436565-Jaku-Console-Wars" class="thumbnail" target="_blank">
+              <img src="images/dribbble/05-retro-console-wars.png" align="dribbble console wars super nintendo design">
+              </a>
+            </li>
+          </ul>
+        </div><!-- @end .row-fluid -->
+        
+        <hr>
+      </div><!-- @end .container -->
+    </div><!-- @end #main-content -->
+    
+
+    
+    <div id="footer">
+      <div class="container">
+        <p>Simple layout design for <a href="http://blog.teamtreehouse.com/">Treehouse Blog</a>.</p>
+        <p>Feel free to download and use these codes for any basic template layout.</p>
+        <p><small>Website code structured with <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>. Background image credits to <a href="http://www.flickr.com/photos/fjolnir/2342246699/">Fjölnir Ásgeirsson</a>. Sample content via <a href="http://bluthipsum.com/">Bluth Ipsum</a>.</small></p>
+      </div>
+    </div>
+</body>
 </html>
